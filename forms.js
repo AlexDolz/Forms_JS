@@ -11,7 +11,7 @@ const filterInput = document.querySelector('#filter');
 // section with products
 const sectionProducts = document.querySelector('#products');
 const sectionText = document.createElement('h2');
-sectionText.innerText = 'Товаров нет!';
+sectionText.innerText = 'The cart is empty!';
 sectionText.style = 'font-size: 40px; text-align: center';
 sectionProducts.append(sectionText);
 // //////////////////////////////////////////////////////////////
