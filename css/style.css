@@ -3,6 +3,19 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Merriweather', serif;
+  -webkit-tap-highlight-color: transparent;
+}
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a:focus,
+a:visited,
+a:active {
+  outline: none;
 }
 body {
   background-color: azure;
@@ -37,7 +50,7 @@ input {
   width: 100%;
   height: 30px;
   margin-bottom: 10px;
-  outline: none; /* ctob nebilo ciornoj granici kogda nazimajem*/
+  outline: none;
   padding: 3px;
   font-size: 14px;
 }
@@ -94,4 +107,14 @@ input {
 .sort_p {
   margin-bottom: 15px;
   color: white;
+}
+@media screen and (min-width: 320px) and (max-width: 520px) {
+  .form,
+  .sort_div {
+    min-width: 320px;
+    width: 0;
+  }
+  #sort_price {
+    width: 30%;
+  }
 }
